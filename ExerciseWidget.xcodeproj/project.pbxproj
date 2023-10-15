@@ -11,6 +11,7 @@
 		49A2388C2ADB5474001BF0E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2388B2ADB5474001BF0E5 /* ContentView.swift */; };
 		49A2388E2ADB5475001BF0E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A2388D2ADB5475001BF0E5 /* Assets.xcassets */; };
 		49A238922ADB5475001BF0E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A238912ADB5475001BF0E5 /* Preview Assets.xcassets */; };
+		49A238992ADB5F28001BF0E5 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A238982ADB5F28001BF0E5 /* HealthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		49A2388D2ADB5475001BF0E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49A2388F2ADB5475001BF0E5 /* ExerciseWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExerciseWidget.entitlements; sourceTree = "<group>"; };
 		49A238912ADB5475001BF0E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49A238982ADB5F28001BF0E5 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				49A238892ADB5474001BF0E5 /* ExerciseWidgetApp.swift */,
 				49A2388B2ADB5474001BF0E5 /* ContentView.swift */,
+				49A238982ADB5F28001BF0E5 /* HealthManager.swift */,
 				49A2388D2ADB5475001BF0E5 /* Assets.xcassets */,
 				49A2388F2ADB5475001BF0E5 /* ExerciseWidget.entitlements */,
 				49A238902ADB5475001BF0E5 /* Preview Content */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A2388C2ADB5474001BF0E5 /* ContentView.swift in Sources */,
+				49A238992ADB5F28001BF0E5 /* HealthManager.swift in Sources */,
 				49A2388A2ADB5474001BF0E5 /* ExerciseWidgetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,13 +271,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ExerciseWidget/ExerciseWidget.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ExerciseWidget/Preview Content\"";
 				DEVELOPMENT_TEAM = 367A6T3988;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access to enjoy widget";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Please allow access to enjoy widget";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -292,10 +300,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wolfsoftworks.ExerciseWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,13 +314,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ExerciseWidget/ExerciseWidget.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ExerciseWidget/Preview Content\"";
 				DEVELOPMENT_TEAM = 367A6T3988;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access to enjoy widget";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Please allow access to enjoy widget";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -330,10 +343,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wolfsoftworks.ExerciseWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

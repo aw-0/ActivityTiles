@@ -1,24 +1,27 @@
-//
-//  ContentView.swift
-//  ExerciseWidget
-//
-//  Created by Andrew on 10/14/23.
-//
-
 import SwiftUI
+import HealthKit
 
 struct ContentView: View {
+    @StateObject var manager = HealthManager()
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "heart.fill")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Welcome to ExcerciseWidget! Please grant us access to the Health App in order to populate the data.")
+                .multilineTextAlignment(.center)
+                .padding()
+//            Button("Authorize Health Data")
+        }
+        .onAppear {
+            manager.fetchActivityForLastMonth()
         }
         .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
