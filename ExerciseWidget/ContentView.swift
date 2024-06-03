@@ -11,10 +11,11 @@ struct ContentView: View {
             Text("Welcome to ExcerciseWidget! Please grant us access to the Health App in order to populate the data.")
                 .multilineTextAlignment(.center)
                 .padding()
-//            Button("Authorize Health Data")
+            Text(manager.output)
+            Button("Get Activity", action: manager.fetchLargeWidgetActivity)
         }
         .onAppear {
-            manager.fetchActivityForLastMonth()
+            manager.fetchLargeWidgetActivity()
         }
         .padding()
     }
