@@ -12,22 +12,22 @@
 		49A2388E2ADB5475001BF0E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A2388D2ADB5475001BF0E5 /* Assets.xcassets */; };
 		49A238922ADB5475001BF0E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A238912ADB5475001BF0E5 /* Preview Assets.xcassets */; };
 		49A238992ADB5F28001BF0E5 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A238982ADB5F28001BF0E5 /* HealthManager.swift */; };
-		49ACA7C42C0E5B0B000D6269 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49ACA7C32C0E5B0B000D6269 /* WidgetKit.framework */; };
-		49ACA7C62C0E5B0B000D6269 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49ACA7C52C0E5B0B000D6269 /* SwiftUI.framework */; };
-		49ACA7C92C0E5B0B000D6269 /* ExerciseWidgetWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ACA7C82C0E5B0B000D6269 /* ExerciseWidgetWidgetBundle.swift */; };
-		49ACA7CB2C0E5B0B000D6269 /* ExerciseWidgetWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ACA7CA2C0E5B0B000D6269 /* ExerciseWidgetWidget.swift */; };
-		49ACA7CD2C0E5B0D000D6269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49ACA7CC2C0E5B0D000D6269 /* Assets.xcassets */; };
-		49ACA7D12C0E5B0D000D6269 /* ExerciseWidgetWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 49ACA7C12C0E5B0B000D6269 /* ExerciseWidgetWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		49BD12A42C0E5BE800F2351E /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD12A32C0E5BE800F2351E /* HealthManager.swift */; };
+		49E4CD1A2C0F9B580090567F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49ACA7C32C0E5B0B000D6269 /* WidgetKit.framework */; };
+		49E4CD1B2C0F9B590090567F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49ACA7C52C0E5B0B000D6269 /* SwiftUI.framework */; };
+		49E4CD1E2C0F9B590090567F /* MoveWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E4CD1D2C0F9B590090567F /* MoveWidgetBundle.swift */; };
+		49E4CD202C0F9B590090567F /* MoveWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E4CD1F2C0F9B590090567F /* MoveWidget.swift */; };
+		49E4CD222C0F9B5A0090567F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E4CD212C0F9B5A0090567F /* Assets.xcassets */; };
+		49E4CD262C0F9B5A0090567F /* MoveWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 49E4CD192C0F9B580090567F /* MoveWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		49E4CD2B2C0F9B880090567F /* MoveHealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E4CD2A2C0F9B880090567F /* MoveHealthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		49ACA7CF2C0E5B0D000D6269 /* PBXContainerItemProxy */ = {
+		49E4CD242C0F9B5A0090567F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 49A2387E2ADB5474001BF0E5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 49ACA7C02C0E5B0B000D6269;
-			remoteInfo = ExerciseWidgetWidgetExtension;
+			remoteGlobalIDString = 49E4CD182C0F9B580090567F;
+			remoteInfo = MoveWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -38,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				49ACA7D12C0E5B0D000D6269 /* ExerciseWidgetWidgetExtension.appex in Embed Foundation Extensions */,
+				49E4CD262C0F9B5A0090567F /* MoveWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,14 +53,14 @@
 		49A2388F2ADB5475001BF0E5 /* ExerciseWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExerciseWidget.entitlements; sourceTree = "<group>"; };
 		49A238912ADB5475001BF0E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49A238982ADB5F28001BF0E5 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
-		49ACA7C12C0E5B0B000D6269 /* ExerciseWidgetWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExerciseWidgetWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		49ACA7C32C0E5B0B000D6269 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		49ACA7C52C0E5B0B000D6269 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		49ACA7C82C0E5B0B000D6269 /* ExerciseWidgetWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseWidgetWidgetBundle.swift; sourceTree = "<group>"; };
-		49ACA7CA2C0E5B0B000D6269 /* ExerciseWidgetWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseWidgetWidget.swift; sourceTree = "<group>"; };
-		49ACA7CC2C0E5B0D000D6269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		49ACA7CE2C0E5B0D000D6269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49BD12A32C0E5BE800F2351E /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		49E4CD192C0F9B580090567F /* MoveWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MoveWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E4CD1D2C0F9B590090567F /* MoveWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveWidgetBundle.swift; sourceTree = "<group>"; };
+		49E4CD1F2C0F9B590090567F /* MoveWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveWidget.swift; sourceTree = "<group>"; };
+		49E4CD212C0F9B5A0090567F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49E4CD232C0F9B5A0090567F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E4CD2A2C0F9B880090567F /* MoveHealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveHealthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +71,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49ACA7BE2C0E5B0B000D6269 /* Frameworks */ = {
+		49E4CD162C0F9B580090567F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49ACA7C62C0E5B0B000D6269 /* SwiftUI.framework in Frameworks */,
-				49ACA7C42C0E5B0B000D6269 /* WidgetKit.framework in Frameworks */,
+				49E4CD1B2C0F9B590090567F /* SwiftUI.framework in Frameworks */,
+				49E4CD1A2C0F9B580090567F /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				49A238882ADB5474001BF0E5 /* ExerciseWidget */,
-				49ACA7C72C0E5B0B000D6269 /* ExerciseWidgetWidget */,
+				49E4CD1C2C0F9B590090567F /* MoveWidget */,
 				49ACA7C22C0E5B0B000D6269 /* Frameworks */,
 				49A238872ADB5474001BF0E5 /* Products */,
 			);
@@ -97,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				49A238862ADB5474001BF0E5 /* ExerciseWidget.app */,
-				49ACA7C12C0E5B0B000D6269 /* ExerciseWidgetWidgetExtension.appex */,
+				49E4CD192C0F9B580090567F /* MoveWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,16 +132,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		49ACA7C72C0E5B0B000D6269 /* ExerciseWidgetWidget */ = {
+		49E4CD1C2C0F9B590090567F /* MoveWidget */ = {
 			isa = PBXGroup;
 			children = (
-				49ACA7C82C0E5B0B000D6269 /* ExerciseWidgetWidgetBundle.swift */,
-				49BD12A32C0E5BE800F2351E /* HealthManager.swift */,
-				49ACA7CA2C0E5B0B000D6269 /* ExerciseWidgetWidget.swift */,
-				49ACA7CC2C0E5B0D000D6269 /* Assets.xcassets */,
-				49ACA7CE2C0E5B0D000D6269 /* Info.plist */,
+				49E4CD1D2C0F9B590090567F /* MoveWidgetBundle.swift */,
+				49E4CD1F2C0F9B590090567F /* MoveWidget.swift */,
+				49E4CD212C0F9B5A0090567F /* Assets.xcassets */,
+				49E4CD232C0F9B5A0090567F /* Info.plist */,
+				49E4CD2A2C0F9B880090567F /* MoveHealthManager.swift */,
 			);
-			path = ExerciseWidgetWidget;
+			path = MoveWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,28 +159,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				49ACA7D02C0E5B0D000D6269 /* PBXTargetDependency */,
+				49E4CD252C0F9B5A0090567F /* PBXTargetDependency */,
 			);
 			name = ExerciseWidget;
 			productName = ExerciseWidget;
 			productReference = 49A238862ADB5474001BF0E5 /* ExerciseWidget.app */;
 			productType = "com.apple.product-type.application";
 		};
-		49ACA7C02C0E5B0B000D6269 /* ExerciseWidgetWidgetExtension */ = {
+		49E4CD182C0F9B580090567F /* MoveWidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49ACA7D52C0E5B0D000D6269 /* Build configuration list for PBXNativeTarget "ExerciseWidgetWidgetExtension" */;
+			buildConfigurationList = 49E4CD272C0F9B5A0090567F /* Build configuration list for PBXNativeTarget "MoveWidgetExtension" */;
 			buildPhases = (
-				49ACA7BD2C0E5B0B000D6269 /* Sources */,
-				49ACA7BE2C0E5B0B000D6269 /* Frameworks */,
-				49ACA7BF2C0E5B0B000D6269 /* Resources */,
+				49E4CD152C0F9B580090567F /* Sources */,
+				49E4CD162C0F9B580090567F /* Frameworks */,
+				49E4CD172C0F9B580090567F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ExerciseWidgetWidgetExtension;
-			productName = ExerciseWidgetWidgetExtension;
-			productReference = 49ACA7C12C0E5B0B000D6269 /* ExerciseWidgetWidgetExtension.appex */;
+			name = MoveWidgetExtension;
+			productName = MoveWidgetExtension;
+			productReference = 49E4CD192C0F9B580090567F /* MoveWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -196,7 +196,7 @@
 					49A238852ADB5474001BF0E5 = {
 						CreatedOnToolsVersion = 15.0;
 					};
-					49ACA7C02C0E5B0B000D6269 = {
+					49E4CD182C0F9B580090567F = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -215,7 +215,7 @@
 			projectRoot = "";
 			targets = (
 				49A238852ADB5474001BF0E5 /* ExerciseWidget */,
-				49ACA7C02C0E5B0B000D6269 /* ExerciseWidgetWidgetExtension */,
+				49E4CD182C0F9B580090567F /* MoveWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -230,11 +230,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49ACA7BF2C0E5B0B000D6269 /* Resources */ = {
+		49E4CD172C0F9B580090567F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49ACA7CD2C0E5B0D000D6269 /* Assets.xcassets in Resources */,
+				49E4CD222C0F9B5A0090567F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,23 +251,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49ACA7BD2C0E5B0B000D6269 /* Sources */ = {
+		49E4CD152C0F9B580090567F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49ACA7C92C0E5B0B000D6269 /* ExerciseWidgetWidgetBundle.swift in Sources */,
-				49BD12A42C0E5BE800F2351E /* HealthManager.swift in Sources */,
-				49ACA7CB2C0E5B0B000D6269 /* ExerciseWidgetWidget.swift in Sources */,
+				49E4CD2B2C0F9B880090567F /* MoveHealthManager.swift in Sources */,
+				49E4CD202C0F9B590090567F /* MoveWidget.swift in Sources */,
+				49E4CD1E2C0F9B590090567F /* MoveWidgetBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		49ACA7D02C0E5B0D000D6269 /* PBXTargetDependency */ = {
+		49E4CD252C0F9B5A0090567F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 49ACA7C02C0E5B0B000D6269 /* ExerciseWidgetWidgetExtension */;
-			targetProxy = 49ACA7CF2C0E5B0D000D6269 /* PBXContainerItemProxy */;
+			target = 49E4CD182C0F9B580090567F /* MoveWidgetExtension */;
+			targetProxy = 49E4CD242C0F9B5A0090567F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -474,7 +474,7 @@
 			};
 			name = Release;
 		};
-		49ACA7D32C0E5B0D000D6269 /* Debug */ = {
+		49E4CD282C0F9B5A0090567F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -483,8 +483,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 367A6T3988;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ExerciseWidgetWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ExerciseWidgetWidget;
+				INFOPLIST_FILE = MoveWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MoveWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -493,7 +493,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wolfsoftworks.ExerciseWidget.ExerciseWidgetWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wolfsoftworks.ExerciseWidget.MoveWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -503,7 +503,7 @@
 			};
 			name = Debug;
 		};
-		49ACA7D42C0E5B0D000D6269 /* Release */ = {
+		49E4CD292C0F9B5A0090567F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -512,8 +512,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 367A6T3988;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ExerciseWidgetWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ExerciseWidgetWidget;
+				INFOPLIST_FILE = MoveWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MoveWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -522,7 +522,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wolfsoftworks.ExerciseWidget.ExerciseWidgetWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wolfsoftworks.ExerciseWidget.MoveWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -554,11 +554,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49ACA7D52C0E5B0D000D6269 /* Build configuration list for PBXNativeTarget "ExerciseWidgetWidgetExtension" */ = {
+		49E4CD272C0F9B5A0090567F /* Build configuration list for PBXNativeTarget "MoveWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				49ACA7D32C0E5B0D000D6269 /* Debug */,
-				49ACA7D42C0E5B0D000D6269 /* Release */,
+				49E4CD282C0F9B5A0090567F /* Debug */,
+				49E4CD292C0F9B5A0090567F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

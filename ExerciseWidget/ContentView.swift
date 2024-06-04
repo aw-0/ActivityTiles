@@ -1,5 +1,6 @@
 import SwiftUI
 import HealthKit
+import WidgetKit
 
 struct ContentView: View {
     @StateObject var manager = HealthManager()
@@ -12,6 +13,9 @@ struct ContentView: View {
                 .multilineTextAlignment(.center)
                 .padding()
             Text(manager.output)
+            Button("TestReload", action: {
+                WidgetCenter.shared.reloadTimelines(ofKind: "MoveWidget")
+            })
             Button("Get Activity", action: manager.fetchLargeWidgetActivity)
         }
         .onAppear {
