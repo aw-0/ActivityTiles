@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4969A2A82C0FF8B600C5B8B5 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969A2A72C0FF8B600C5B8B5 /* Utils.swift */; };
 		49A2388A2ADB5474001BF0E5 /* ExerciseWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A238892ADB5474001BF0E5 /* ExerciseWidgetApp.swift */; };
 		49A2388C2ADB5474001BF0E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2388B2ADB5474001BF0E5 /* ContentView.swift */; };
 		49A2388E2ADB5475001BF0E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A2388D2ADB5475001BF0E5 /* Assets.xcassets */; };
@@ -18,7 +19,7 @@
 		49E4CD202C0F9B590090567F /* MoveWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E4CD1F2C0F9B590090567F /* MoveWidget.swift */; };
 		49E4CD222C0F9B5A0090567F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E4CD212C0F9B5A0090567F /* Assets.xcassets */; };
 		49E4CD262C0F9B5A0090567F /* MoveWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 49E4CD192C0F9B580090567F /* MoveWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		49E4CD2B2C0F9B880090567F /* MoveHealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E4CD2A2C0F9B880090567F /* MoveHealthManager.swift */; };
+		49E4CD2B2C0F9B880090567F /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E4CD2A2C0F9B880090567F /* HealthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4969A2A72C0FF8B600C5B8B5 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		49A238862ADB5474001BF0E5 /* ExerciseWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExerciseWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A238892ADB5474001BF0E5 /* ExerciseWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseWidgetApp.swift; sourceTree = "<group>"; };
 		49A2388B2ADB5474001BF0E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,7 +62,7 @@
 		49E4CD1F2C0F9B590090567F /* MoveWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveWidget.swift; sourceTree = "<group>"; };
 		49E4CD212C0F9B5A0090567F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49E4CD232C0F9B5A0090567F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49E4CD2A2C0F9B880090567F /* MoveHealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveHealthManager.swift; sourceTree = "<group>"; };
+		49E4CD2A2C0F9B880090567F /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		49A2387D2ADB5474001BF0E5 = {
 			isa = PBXGroup;
 			children = (
+				49E4CD2A2C0F9B880090567F /* HealthManager.swift */,
 				49A238882ADB5474001BF0E5 /* ExerciseWidget */,
 				49E4CD1C2C0F9B590090567F /* MoveWidget */,
 				49ACA7C22C0E5B0B000D6269 /* Frameworks */,
@@ -139,7 +142,7 @@
 				49E4CD1F2C0F9B590090567F /* MoveWidget.swift */,
 				49E4CD212C0F9B5A0090567F /* Assets.xcassets */,
 				49E4CD232C0F9B5A0090567F /* Info.plist */,
-				49E4CD2A2C0F9B880090567F /* MoveHealthManager.swift */,
+				4969A2A72C0FF8B600C5B8B5 /* Utils.swift */,
 			);
 			path = MoveWidget;
 			sourceTree = "<group>";
@@ -255,9 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49E4CD2B2C0F9B880090567F /* MoveHealthManager.swift in Sources */,
+				49E4CD2B2C0F9B880090567F /* HealthManager.swift in Sources */,
 				49E4CD202C0F9B590090567F /* MoveWidget.swift in Sources */,
 				49E4CD1E2C0F9B590090567F /* MoveWidgetBundle.swift in Sources */,
+				4969A2A82C0FF8B600C5B8B5 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
