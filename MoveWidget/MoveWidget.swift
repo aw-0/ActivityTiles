@@ -108,7 +108,7 @@ struct MoveWidget: Widget {
         }
         .configurationDisplayName("Move Tracker Widget")
         .description("Track your move progress over time!")
-        .supportedFamilies([.systemSmall, .systemMedium])
+        .supportedFamilies([.systemMedium])
     }
 }
 
