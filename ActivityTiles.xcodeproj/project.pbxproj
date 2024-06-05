@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4969A2A82C0FF8B600C5B8B5 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969A2A72C0FF8B600C5B8B5 /* Utils.swift */; };
-		49A2388A2ADB5474001BF0E5 /* ExerciseWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A238892ADB5474001BF0E5 /* ExerciseWidgetApp.swift */; };
+		49A2388A2ADB5474001BF0E5 /* ActivityTilesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A238892ADB5474001BF0E5 /* ActivityTilesApp.swift */; };
 		49A2388C2ADB5474001BF0E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2388B2ADB5474001BF0E5 /* ContentView.swift */; };
 		49A2388E2ADB5475001BF0E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A2388D2ADB5475001BF0E5 /* Assets.xcassets */; };
 		49A238922ADB5475001BF0E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A238912ADB5475001BF0E5 /* Preview Assets.xcassets */; };
@@ -48,11 +48,11 @@
 
 /* Begin PBXFileReference section */
 		4969A2A72C0FF8B600C5B8B5 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		49A238862ADB5474001BF0E5 /* ExerciseWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExerciseWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		49A238892ADB5474001BF0E5 /* ExerciseWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseWidgetApp.swift; sourceTree = "<group>"; };
+		49A238862ADB5474001BF0E5 /* ActivityTiles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityTiles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A238892ADB5474001BF0E5 /* ActivityTilesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTilesApp.swift; sourceTree = "<group>"; };
 		49A2388B2ADB5474001BF0E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49A2388D2ADB5475001BF0E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		49A2388F2ADB5475001BF0E5 /* ExerciseWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExerciseWidget.entitlements; sourceTree = "<group>"; };
+		49A2388F2ADB5475001BF0E5 /* ActivityTiles.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ActivityTiles.entitlements; sourceTree = "<group>"; };
 		49A238912ADB5475001BF0E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49A238982ADB5F28001BF0E5 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		49ACA7C32C0E5B0B000D6269 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -89,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				49E4CD2A2C0F9B880090567F /* HealthManager.swift */,
-				49A238882ADB5474001BF0E5 /* ExerciseWidget */,
+				49A238882ADB5474001BF0E5 /* ActivityTiles */,
 				49E4CD1C2C0F9B590090567F /* MoveWidget */,
 				49ACA7C22C0E5B0B000D6269 /* Frameworks */,
 				49A238872ADB5474001BF0E5 /* Products */,
@@ -99,23 +99,23 @@
 		49A238872ADB5474001BF0E5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				49A238862ADB5474001BF0E5 /* ExerciseWidget.app */,
+				49A238862ADB5474001BF0E5 /* ActivityTiles.app */,
 				49E4CD192C0F9B580090567F /* MoveWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		49A238882ADB5474001BF0E5 /* ExerciseWidget */ = {
+		49A238882ADB5474001BF0E5 /* ActivityTiles */ = {
 			isa = PBXGroup;
 			children = (
-				49A238892ADB5474001BF0E5 /* ExerciseWidgetApp.swift */,
+				49A238892ADB5474001BF0E5 /* ActivityTilesApp.swift */,
 				49A2388B2ADB5474001BF0E5 /* ContentView.swift */,
 				49A238982ADB5F28001BF0E5 /* HealthManager.swift */,
 				49A2388D2ADB5475001BF0E5 /* Assets.xcassets */,
-				49A2388F2ADB5475001BF0E5 /* ExerciseWidget.entitlements */,
+				49A2388F2ADB5475001BF0E5 /* ActivityTiles.entitlements */,
 				49A238902ADB5475001BF0E5 /* Preview Content */,
 			);
-			path = ExerciseWidget;
+			path = ActivityTiles;
 			sourceTree = "<group>";
 		};
 		49A238902ADB5475001BF0E5 /* Preview Content */ = {
@@ -150,9 +150,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		49A238852ADB5474001BF0E5 /* ExerciseWidget */ = {
+		49A238852ADB5474001BF0E5 /* ActivityTiles */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49A238952ADB5475001BF0E5 /* Build configuration list for PBXNativeTarget "ExerciseWidget" */;
+			buildConfigurationList = 49A238952ADB5475001BF0E5 /* Build configuration list for PBXNativeTarget "ActivityTiles" */;
 			buildPhases = (
 				49A238822ADB5474001BF0E5 /* Sources */,
 				49A238832ADB5474001BF0E5 /* Frameworks */,
@@ -164,9 +164,9 @@
 			dependencies = (
 				49E4CD252C0F9B5A0090567F /* PBXTargetDependency */,
 			);
-			name = ExerciseWidget;
+			name = ActivityTiles;
 			productName = ExerciseWidget;
-			productReference = 49A238862ADB5474001BF0E5 /* ExerciseWidget.app */;
+			productReference = 49A238862ADB5474001BF0E5 /* ActivityTiles.app */;
 			productType = "com.apple.product-type.application";
 		};
 		49E4CD182C0F9B580090567F /* MoveWidgetExtension */ = {
@@ -194,7 +194,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					49A238852ADB5474001BF0E5 = {
 						CreatedOnToolsVersion = 15.0;
@@ -204,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 49A238812ADB5474001BF0E5 /* Build configuration list for PBXProject "ExerciseWidget" */;
+			buildConfigurationList = 49A238812ADB5474001BF0E5 /* Build configuration list for PBXProject "ActivityTiles" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,7 +217,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				49A238852ADB5474001BF0E5 /* ExerciseWidget */,
+				49A238852ADB5474001BF0E5 /* ActivityTiles */,
 				49E4CD182C0F9B580090567F /* MoveWidgetExtension */,
 			);
 		};
@@ -250,7 +250,7 @@
 			files = (
 				49A2388C2ADB5474001BF0E5 /* ContentView.swift in Sources */,
 				49A238992ADB5F28001BF0E5 /* HealthManager.swift in Sources */,
-				49A2388A2ADB5474001BF0E5 /* ExerciseWidgetApp.swift in Sources */,
+				49A2388A2ADB5474001BF0E5 /* ActivityTilesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +310,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -371,6 +372,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -396,18 +398,21 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ExerciseWidget/ExerciseWidget.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ActivityTiles/ActivityTiles.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ExerciseWidget/Preview Content\"";
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ActivityTiles/Preview Content\"";
 				DEVELOPMENT_TEAM = 367A6T3988;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access to enjoy widget";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Please allow access to enjoy widget";
+				INFOPLIST_KEY_CFBundleDisplayName = "Activity Tiles";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access so we can display activity data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Please allow access so we can display activity data";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -416,14 +421,14 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wolfsoftworks.ExerciseWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wolfsoftworks.ActivityTiles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -440,18 +445,21 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ExerciseWidget/ExerciseWidget.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ActivityTiles/ActivityTiles.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ExerciseWidget/Preview Content\"";
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ActivityTiles/Preview Content\"";
 				DEVELOPMENT_TEAM = 367A6T3988;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access to enjoy widget";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Please allow access to enjoy widget";
+				INFOPLIST_KEY_CFBundleDisplayName = "Activity Tiles";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access so we can display activity data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Please allow access so we can display activity data";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -460,14 +468,14 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wolfsoftworks.ExerciseWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wolfsoftworks.ActivityTiles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -497,7 +505,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wolfsoftworks.ExerciseWidget.MoveWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wolfsoftworks.ActivityTiles.MoveWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -526,7 +534,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wolfsoftworks.ExerciseWidget.MoveWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wolfsoftworks.ActivityTiles.MoveWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -540,7 +548,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		49A238812ADB5474001BF0E5 /* Build configuration list for PBXProject "ExerciseWidget" */ = {
+		49A238812ADB5474001BF0E5 /* Build configuration list for PBXProject "ActivityTiles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49A238932ADB5475001BF0E5 /* Debug */,
@@ -549,7 +557,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49A238952ADB5475001BF0E5 /* Build configuration list for PBXNativeTarget "ExerciseWidget" */ = {
+		49A238952ADB5475001BF0E5 /* Build configuration list for PBXNativeTarget "ActivityTiles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49A238962ADB5475001BF0E5 /* Debug */,

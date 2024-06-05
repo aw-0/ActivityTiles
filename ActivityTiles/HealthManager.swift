@@ -31,7 +31,7 @@ class HealthManager: ObservableObject {
     
     func fetchLargeWidgetActivity() {
         // constants
-        let currentDates = 84
+        let currentDates = 98
 
         // totals for average
         var totalCal = 0.0

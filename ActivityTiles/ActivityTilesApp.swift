@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct ExerciseWidgetApp: App {
+struct ActivityTilesApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

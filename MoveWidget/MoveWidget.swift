@@ -22,7 +22,7 @@ struct Provider: TimelineProvider {
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let manager = HealthManager()
         var totalCal = 0.0
-        var allCalorieData = Set<CalorieData>()
+        var allCalorieData = Array<CalorieData>()
         // refresh every 15 minutes
         let currentDate = Date()
         let refreshMinuteGranuity = 15
@@ -46,7 +46,7 @@ struct Provider: TimelineProvider {
 
             for sample in summaries {
                 totalCal += sample.activeEnergyBurned.doubleValue(for: .kilocalorie())
-                allCalorieData.insert(CalorieData(date: sample.dateComponents(for: Calendar.current).date!, calories: sample.activeEnergyBurned.doubleValue(for: .kilocalorie())))
+                allCalorieData.append(CalorieData(date: sample.dateComponents(for: Calendar.current).date!, calories: sample.activeEnergyBurned.doubleValue(for: .kilocalorie())))
             }
 
             let average = summaries.isEmpty ? 0 : totalCal / Double(summaries.count)
@@ -63,7 +63,7 @@ struct Provider: TimelineProvider {
 struct MoveEntry: TimelineEntry {
     let date: Date
     let avgCals: Double
-    let allCalorieData: Set<CalorieData>
+    let allCalorieData: Array<CalorieData>
 }
 
 struct MoveWidgetEntryView: View {
@@ -71,8 +71,22 @@ struct MoveWidgetEntryView: View {
 
     var body: some View {
         VStack {
-            Text("Avg Cal: \(entry.avgCals)")
-            Text("Data count: \(entry.allCalorieData.count)")
+            ForEach(0..<7) { col in
+                HStack {
+                    ForEach(0..<14) { row in
+                        RoundedRectangle(cornerRadius: 4, style: .continuous)
+                            .fill(boxColor)
+                            .opacity(determineOpacity(part: entry.allCalorieData[col*7 + row].calories, whole: entry.avgCals))
+                            .frame(height: 12)
+                            .padding(EdgeInsets(top: 0, leading: -1, bottom: 0, trailing: -1))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 4)
+                                    .strokeBorder(boxColor, lineWidth: 1.5)
+                                    .padding(EdgeInsets(top: 0, leading: -1, bottom: 0, trailing: -1))
+                            )
+                    }
+                }
+            }
         }
     }
 }
