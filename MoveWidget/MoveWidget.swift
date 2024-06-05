@@ -75,13 +75,13 @@ struct MoveWidgetEntryView: View {
                 HStack {
                     ForEach(0..<14) { row in
                         RoundedRectangle(cornerRadius: 4, style: .continuous)
-                            .fill(boxColor)
+                            .fill(tileColor)
                             .opacity(determineOpacity(part: entry.allCalorieData[col*7 + row].calories, whole: entry.avgCals))
                             .frame(height: 12)
                             .padding(EdgeInsets(top: 0, leading: -1, bottom: 0, trailing: -1))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 4)
-                                    .strokeBorder(boxColor, lineWidth: 1.5)
+                                    .strokeBorder(tileColor, lineWidth: 1.5)
                                     .padding(EdgeInsets(top: 0, leading: -1, bottom: 0, trailing: -1))
                             )
                     }

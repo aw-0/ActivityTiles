@@ -13,7 +13,7 @@ struct CalorieData: Hashable {
     let calories: Double
 }
 
-let boxColor = Color(UIColor(red: 235/255.0, green: 64/255.0, blue: 52/255.0, alpha: 1))//Color(UIColor(red: 182/255.0, green: 245/255.0, blue: 89/255.0, alpha: 1))
+let tileColor = Color(UIColor(red: 235/255.0, green: 64/255.0, blue: 52/255.0, alpha: 1))//Color(UIColor(red: 182/255.0, green: 245/255.0, blue: 89/255.0, alpha: 1))
 
 func getLargeWidgetDemoData() -> Array<CalorieData> {
     var largeWidgetDemoData: Array<CalorieData> = Array()
@@ -30,9 +30,11 @@ func determineOpacity(part: Double, whole: Double) -> Double {
         return 0.1
     } else if (percent <= 0.5) {
         return 0.25
-    } else if (percent > 0.5 && percent < 1) {
+    } else if (percent > 0.5 && percent < 0.75) {
         return 0.5
+    } else if (percent > 0.75 && percent < 1) {
+        return 0.75
     } else {
-        return 1.0
+        return 1
     }
 }
